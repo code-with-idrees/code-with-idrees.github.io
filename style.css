@@ -88,24 +88,6 @@ em{color:var(--amber);font-style:normal}
 .photo-frame img{width:100%;height:100%;object-fit:cover;object-position:top}
 .photo-placeholder{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--text3);font-size:3rem}
 
-/* Floating Terminal */
-.floating-terminal{position:absolute;bottom:-30px;left:-220px;background:var(--card-solid);border:1px solid var(--border);border-radius:10px;font-family:var(--mono);font-size:0.75rem;width:320px;box-shadow:var(--shadow);z-index:2;overflow:hidden;animation:float 6s ease-in-out infinite}
-.term-header{background:var(--bg3);padding:6px 10px;display:flex;align-items:center;gap:6px;border-bottom:1px solid var(--border)}
-.term-dot{width:10px;height:10px;border-radius:50%}
-.term-dot.close{background:#ff5f56}
-.term-dot.min{background:#ffbd2e}
-.term-dot.max{background:#27c93f}
-.term-title{margin-left:auto;color:var(--text3);font-size:0.6rem}
-.term-body{padding:10px 12px;color:var(--text2);line-height:1.5;text-align:left}
-.term-prompt{color:var(--accent)}
-.term-cmd{color:var(--text)}
-.term-output{display:block;margin-top:4px}
-.term-output.delay-1{animation:typeOut 0.1s 1.5s both}
-.term-output.delay-2{animation:typeOut 0.1s 2s both}
-.term-output.delay-3{animation:typeOut 0.1s 2.5s both}
-.term-output.delay-4{animation:typeOut 0.1s 3s both}
-@keyframes typeOut{from{opacity:0}to{opacity:1}}
-@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 
 /* ══════ STATS ══════ */
 .stats-banner{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:2rem;transition:background .45s}
