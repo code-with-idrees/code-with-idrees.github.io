@@ -3,173 +3,378 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Idrees - Software Developer, focusing on modern web development, intelligent systems, and problem solving.">
-    <title>Idrees | Software Developer</title>
-    
+    <meta name="description" content="Muhammad Idrees — Undergraduate AI/ML Researcher at FAST-NUCES Islamabad. Research in Machine Learning, High-Performance Computing, Generative AI, and NLP. Open to PhD opportunities.">
+    <meta name="keywords" content="Muhammad Idrees, AI researcher, machine learning, FAST-NUCES, PhD applicant, HPC, CUDA, NLP, generative AI">
+    <meta name="author" content="Muhammad Idrees">
+    <title>Muhammad Idrees — AI/ML Researcher</title>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
     <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    
-    <!-- Custom CSS -->
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-
+    <!-- Navigation -->
     <nav id="navbar">
-        <div class="nav-content">
-            <div class="logo">Idrees<span>.dev</span></div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
+        <div class="nav-inner">
+            <a href="#" class="nav-name">M. Idrees</a>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="hamburger">
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
                 <i class="ph ph-list"></i>
-            </div>
+            </button>
         </div>
     </nav>
 
-    <main>
-        <section id="home" class="hero-section">
-            <div class="hero-content fade-in">
-                <h2 class="greeting">Hello, I'm</h2>
-                <h1 class="name">Idrees</h1>
-                <h3 class="role">I build <span class="typing-text"></span></h3>
-                <p class="summary">
-                    A passionate software developer specializing in building exceptional digital experiences, 
-                    intelligent systems, and modern web applications.
+    <!-- Hero / Header -->
+    <header id="hero" class="hero">
+        <div class="hero-inner">
+            <div class="hero-text">
+                <p class="hero-label">AI / ML Researcher</p>
+                <h1>Muhammad Idrees</h1>
+                <p class="hero-affiliation">
+                    <i class="ph ph-graduation-cap"></i>
+                    BS Computer Science · <a href="https://www.nu.edu.pk/" target="_blank">FAST-NUCES</a>, Islamabad
                 </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn primary-btn">View My Work</a>
-                    <a href="https://github.com/code-with-idrees" target="_blank" class="btn secondary-btn">
-                        <i class="ph ph-github-logo"></i> GitHub
+                <p class="hero-tagline">
+                    I build AI systems that are efficient, scalable, and universally accessible. 
+                    My research spans <strong>deep learning</strong>, <strong>high-performance computing</strong>, and <strong>generative AI</strong> — from 
+                    low-level CUDA kernel optimization to multi-agent LLM pipelines.
+                </p>
+                <div class="hero-status">
+                    <span class="status-badge"><span class="status-dot"></span> Open to PhD Opportunities & Research Collaborations</span>
+                </div>
+                <div class="hero-links">
+                    <a href="https://github.com/code-with-idrees" target="_blank" class="icon-link" title="GitHub"><i class="ph ph-github-logo"></i></a>
+                    <a href="https://linkedin.com/in/muhammadidrees-" target="_blank" class="icon-link" title="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+                    <a href="https://medium.com/@idrees0" target="_blank" class="icon-link" title="Medium"><i class="ph ph-medium-logo"></i></a>
+                    <a href="https://instagram.com/thee_persistent" target="_blank" class="icon-link" title="Instagram"><i class="ph ph-instagram-logo"></i></a>
+                    <a href="mailto:muhammad.idrees2k25@gmail.com" class="icon-link" title="Email"><i class="ph ph-envelope-simple"></i></a>
+                </div>
+            </div>
+            <div class="hero-photo">
+                <div class="photo-frame">
+                    <img src="profile.jpg" alt="Muhammad Idrees" id="profilePhoto">
+                    <div class="photo-placeholder" id="photoPlaceholder">
+                        <i class="ph ph-user"></i>
+                        <span>Your Photo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="section-inner">
+                <h2 class="section-heading">About</h2>
+                <div class="about-content">
+                    <p>
+                        I am an undergraduate researcher at <strong>FAST-NUCES Islamabad</strong> working at the intersection 
+                        of deep learning, high-performance computing, and generative AI. I am a <strong>Stanford Code in Place 
+                        Section Leader '25</strong> and was selected for the <strong>CERN Beamline for Schools (BL4S)</strong> program.
+                    </p>
+                    <p>
+                        My work ranges from designing memory-efficient transformer architectures to building production-grade 
+                        multi-agent LLM pipelines. I care about making models that actually work — fast, interpretable, and deployable.
+                        I write about my research on <a href="https://medium.com/@idrees0" target="_blank">Medium</a>.
+                    </p>
+                    <p>
+                        I am actively seeking <strong>PhD positions</strong> in Machine Learning, NLP, or HPC for Fall 2026/2027. 
+                        I am also open to research internships and collaborations.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Interests -->
+        <section id="research" class="section section-alt">
+            <div class="section-inner">
+                <h2 class="section-heading">Research Interests</h2>
+                <div class="research-grid">
+                    <div class="research-card">
+                        <div class="research-icon"><i class="ph ph-brain"></i></div>
+                        <h3>Machine Learning & NLP</h3>
+                        <ul>
+                            <li>Transformer architectures (BERT, T5, encoder-decoder)</li>
+                            <li>Sequence-to-sequence & low-resource NMT</li>
+                            <li>Multi-agent LLM orchestration</li>
+                            <li>Efficient fine-tuning: LoRA, QLoRA, PEFT</li>
+                        </ul>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon"><i class="ph ph-cpu"></i></div>
+                        <h3>High-Performance Computing</h3>
+                        <ul>
+                            <li>CUDA programming & GPU-accelerated ML</li>
+                            <li>Parallel & distributed training (MPI, OpenMP)</li>
+                            <li>Memory-efficient inference & FlashAttention</li>
+                            <li>Model compression & quantization</li>
+                        </ul>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon"><i class="ph ph-robot"></i></div>
+                        <h3>Generative AI</h3>
+                        <ul>
+                            <li>Large language models (Gemini, Groq, Ollama)</li>
+                            <li>Diffusion models & image synthesis</li>
+                            <li>Autonomous AI agents & tool-use pipelines</li>
+                            <li>Prompt engineering & RLHF</li>
+                        </ul>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon"><i class="ph ph-flask"></i></div>
+                        <h3>Currently Exploring</h3>
+                        <ul>
+                            <li>Sparse Mixture-of-Experts architectures</li>
+                            <li>FlashAttention & memory-efficient transformers</li>
+                            <li>Autonomous multi-agent reasoning systems</li>
+                            <li>Foundation model pre-training at scale</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications / Research Work -->
+        <section id="publications" class="section">
+            <div class="section-inner">
+                <h2 class="section-heading">Research Work & Reports</h2>
+                <div class="publications-list">
+                    <div class="pub-item">
+                        <div class="pub-year">2026</div>
+                        <div class="pub-content">
+                            <h3>Denoising Autoencoder for CIFAR-10: Ablation Studies on Architecture & Noise Robustness</h3>
+                            <p class="pub-authors"><strong>Muhammad Idrees</strong></p>
+                            <p class="pub-venue">10-page LNCS-format research report · 45+ ablation experiments</p>
+                            <p class="pub-desc">Designed a 182K-parameter DAE achieving 24.62 dB PSNR and 0.8225 SSIM. Comprehensive study on noise-level sensitivity, bottleneck dimensionality, and training dynamics with publication-quality figures.</p>
+                            <div class="pub-tags">
+                                <span>PyTorch</span><span>Computer Vision</span><span>Autoencoders</span>
+                            </div>
+                            <div class="pub-links">
+                                <a href="https://github.com/code-with-idrees/Denoising-Autoencoder-Cifar10" target="_blank"><i class="ph ph-github-logo"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pub-item">
+                        <div class="pub-year">2026</div>
+                        <div class="pub-content">
+                            <h3>Intelligent Reading Comprehension & Quiz Generation using Hybrid ML Pipelines</h3>
+                            <p class="pub-authors"><strong>Muhammad Idrees</strong>, et al.</p>
+                            <p class="pub-venue">FAST-NUCES Capstone Project · BERT + T5 Transformer Pipeline</p>
+                            <p class="pub-desc">Hybrid ML pipeline using BERT + T5 transformers to analyze text and auto-generate reading comprehension questions and quizzes. Designed as a full AI-powered educational tool with BLEU/ROUGE/METEOR evaluation.</p>
+                            <div class="pub-tags">
+                                <span>NLP</span><span>BERT</span><span>T5</span><span>Question Generation</span>
+                            </div>
+                            <div class="pub-links">
+                                <a href="https://github.com/code-with-idrees/NeuraQuiz-AI" target="_blank"><i class="ph ph-github-logo"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pub-item">
+                        <div class="pub-year">2026</div>
+                        <div class="pub-content">
+                            <h3>English–Urdu Neural Machine Translation: An Empirical Study on Low-Resource Seq2Seq</h3>
+                            <p class="pub-authors"><strong>Muhammad Idrees</strong></p>
+                            <p class="pub-venue">Empirical Study · Vanilla RNN Encoder-Decoder</p>
+                            <p class="pub-desc">Vanilla RNN encoder-decoder for low-resource Eng→Urdu NMT. Empirical study on vanishing gradients, sequence bottlenecks, and training instability in under-resourced language pairs.</p>
+                            <div class="pub-tags">
+                                <span>PyTorch</span><span>RNN</span><span>Seq2Seq</span><span>Computational Linguistics</span>
+                            </div>
+                            <div class="pub-links">
+                                <a href="https://github.com/code-with-idrees/Machine_Translation_RNN" target="_blank"><i class="ph ph-github-logo"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section id="projects" class="section section-alt">
+            <div class="section-inner">
+                <h2 class="section-heading">Featured Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-top">
+                            <i class="ph ph-folder-open"></i>
+                            <div class="project-card-links">
+                                <a href="https://github.com/code-with-idrees/Google-Meet-AI-Attendence-Agent" target="_blank"><i class="ph ph-github-logo"></i></a>
+                            </div>
+                        </div>
+                        <h3>Google Meet AI Attendance Agent</h3>
+                        <p>Fully offline autonomous agent that joins live Google Meet sessions, transcribes speech via Faster-Whisper, marks attendance, answers questions, and auto-generates structured PDF notes. Zero API keys required.</p>
+                        <div class="project-meta">
+                            <span>Python</span><span>Faster-Whisper</span><span>Ollama</span><span>Playwright</span>
+                        </div>
+                        <div class="project-stars"><i class="ph ph-star"></i> 11</div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-top">
+                            <i class="ph ph-folder-open"></i>
+                            <div class="project-card-links">
+                                <a href="https://github.com/code-with-idrees/Super-Mario-x86-Assembly" target="_blank"><i class="ph ph-github-logo"></i></a>
+                            </div>
+                        </div>
+                        <h3>Super Mario in x86 Assembly</h3>
+                        <p>A faithful recreation of Super Mario Bros built entirely in x86 Assembly language, demonstrating low-level systems programming, hardware interaction, and game development fundamentals.</p>
+                        <div class="project-meta">
+                            <span>x86 Assembly</span><span>Systems Programming</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-top">
+                            <i class="ph ph-folder-open"></i>
+                            <div class="project-card-links">
+                                <a href="https://github.com/code-with-idrees/Google_Cloud_x_MLB_Hackathon" target="_blank"><i class="ph ph-github-logo"></i></a>
+                            </div>
+                        </div>
+                        <h3>Google Cloud × MLB Hackathon</h3>
+                        <p>Production-grade MLB fan engagement platform using Google Cloud AI. Built real-time predictive models and personalized content pipelines for live game enhancement.</p>
+                        <div class="project-meta">
+                            <span>GCP</span><span>Python</span><span>Predictive Modeling</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-top">
+                            <i class="ph ph-folder-open"></i>
+                            <div class="project-card-links">
+                                <a href="https://github.com/code-with-idrees/VIRASAT_AI" target="_blank"><i class="ph ph-github-logo"></i></a>
+                            </div>
+                        </div>
+                        <h3>VIRASAT AI</h3>
+                        <p>AI-powered cultural heritage preservation system leveraging modern ML techniques for documenting and analyzing South Asian historical artifacts and traditions.</p>
+                        <div class="project-meta">
+                            <span>Python</span><span>AI</span><span>Cultural Tech</span>
+                        </div>
+                    </article>
+                </div>
+                <div class="projects-more">
+                    <a href="https://github.com/code-with-idrees?tab=repositories" target="_blank" class="text-link">
+                        View all repositories on GitHub <i class="ph ph-arrow-right"></i>
                     </a>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="about-section">
-            <div class="section-title fade-in">
-                <h2>About Me</h2>
-                <div class="underline"></div>
+        <!-- Experience & Highlights -->
+        <section id="experience" class="section">
+            <div class="section-inner">
+                <h2 class="section-heading">Experience & Highlights</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2025</div>
+                            <h3>Stanford Code in Place — Section Leader</h3>
+                            <p>Selected as a Section Leader for Stanford University's Code in Place program, mentoring students globally in introductory Python programming and CS fundamentals.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2025</div>
+                            <h3>CERN Beamline for Schools (BL4S)</h3>
+                            <p>Selected for the prestigious CERN BL4S program — a global competition where teams propose particle physics experiments to be carried out at CERN's facilities.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2024 – Present</div>
+                            <h3>BS Computer Science — FAST-NUCES, Islamabad</h3>
+                            <p>Undergraduate studies with focus on AI/ML, HPC, and systems programming. Active in competitive programming and open-source contributions.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="about-content fade-in">
-                <div class="about-text">
+        </section>
+
+        <!-- Technical Stack -->
+        <section id="skills" class="section section-alt">
+            <div class="section-inner">
+                <h2 class="section-heading">Technical Proficiency</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="ph ph-code"></i> Languages</h3>
+                        <div class="skill-pills">
+                            <span>Python</span><span>C++</span><span>Java</span><span>JavaScript</span><span>SQL</span><span>x86 Assembly</span><span>CUDA C</span><span>TeX</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="ph ph-brain"></i> ML / Deep Learning</h3>
+                        <div class="skill-pills">
+                            <span>PyTorch</span><span>TensorFlow</span><span>Hugging Face</span><span>scikit-learn</span><span>XGBoost</span><span>SBERT</span><span>spaCy</span><span>NLTK</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="ph ph-robot"></i> Generative AI & LLMs</h3>
+                        <div class="skill-pills">
+                            <span>Gemini API</span><span>Groq</span><span>Ollama</span><span>LangChain</span><span>LoRA</span><span>QLoRA</span><span>PEFT</span><span>RLHF</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="ph ph-cpu"></i> HPC & Systems</h3>
+                        <div class="skill-pills">
+                            <span>CUDA</span><span>MPI</span><span>OpenMP</span><span>FlashAttention</span><span>NVIDIA CUDA Quantum</span><span>Linux</span><span>Docker</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="ph ph-cloud"></i> Cloud & MLOps</h3>
+                        <div class="skill-pills">
+                            <span>Google Cloud</span><span>Git</span><span>GitHub Actions</span><span>Weights & Biases</span><span>Jupyter</span><span>Colab</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <div class="section-inner">
+                <h2 class="section-heading">Get in Touch</h2>
+                <div class="contact-content">
                     <p>
-                        I am a dedicated developer with a strong foundation in computer science and a passion for creating impactful software solutions. 
-                        Whether it's developing intelligent systems, crafting beautiful user interfaces, or designing robust databases, I thrive on solving complex problems.
+                        I'm actively seeking <strong>PhD positions</strong>, <strong>research internships</strong>, and 
+                        <strong>collaborations</strong> in Machine Learning, NLP, and High-Performance Computing.
+                        If you're a faculty member, researcher, or fellow student with shared interests, 
+                        I'd love to connect.
                     </p>
-                    <div class="skills">
-                        <div class="skill-tag">Python</div>
-                        <div class="skill-tag">JavaScript</div>
-                        <div class="skill-tag">HTML & CSS</div>
-                        <div class="skill-tag">SQL</div>
-                        <div class="skill-tag">Machine Learning</div>
-                        <div class="skill-tag">Git</div>
+                    <a href="mailto:muhammad.idrees2k25@gmail.com" class="contact-btn">
+                        <i class="ph ph-envelope-simple"></i> muhammad.idrees2k25@gmail.com
+                    </a>
+                    <div class="contact-links">
+                        <a href="https://github.com/code-with-idrees" target="_blank"><i class="ph ph-github-logo"></i> GitHub</a>
+                        <a href="https://linkedin.com/in/muhammadidrees-" target="_blank"><i class="ph ph-linkedin-logo"></i> LinkedIn</a>
+                        <a href="https://medium.com/@idrees0" target="_blank"><i class="ph ph-medium-logo"></i> Medium</a>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="projects" class="projects-section">
-            <div class="section-title fade-in">
-                <h2>Featured Projects</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card fade-in">
-                    <div class="project-content">
-                        <div class="project-header">
-                            <i class="ph ph-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/code-with-idrees" target="_blank"><i class="ph ph-github-logo"></i></a>
-                            </div>
-                        </div>
-                        <h3 class="project-title">Intelligent Reading System</h3>
-                        <p class="project-description">
-                            A machine learning system for reading comprehension and automated quiz generation using neural networks and NLP techniques.
-                        </p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>NLP</span>
-                            <span>ML</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card fade-in">
-                    <div class="project-content">
-                        <div class="project-header">
-                            <i class="ph ph-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/code-with-idrees" target="_blank"><i class="ph ph-github-logo"></i></a>
-                            </div>
-                        </div>
-                        <h3 class="project-title">JSON to XML Translator</h3>
-                        <p class="project-description">
-                            A custom compiler tool built to lex, parse, and translate JSON structures into valid XML formatting using JFlex and Java CUP.
-                        </p>
-                        <div class="project-tech">
-                            <span>Java</span>
-                            <span>JFlex</span>
-                            <span>AST</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card fade-in">
-                    <div class="project-content">
-                        <div class="project-header">
-                            <i class="ph ph-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/code-with-idrees" target="_blank"><i class="ph ph-github-logo"></i></a>
-                            </div>
-                        </div>
-                        <h3 class="project-title">DB Lab System</h3>
-                        <p class="project-description">
-                            A comprehensive database management project featuring complex SQL queries, optimized schemas, and efficient data handling.
-                        </p>
-                        <div class="project-tech">
-                            <span>MySQL</span>
-                            <span>Database Design</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact-section">
-            <div class="section-title fade-in">
-                <h2>Get In Touch</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="contact-content fade-in">
-                <p>
-                    I'm currently looking for new opportunities. Whether you have a question or just want to say hi, 
-                    I'll try my best to get back to you!
-                </p>
-                <a href="mailto:your.email@example.com" class="btn primary-btn">Say Hello</a>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="social-links">
-            <a href="https://github.com/code-with-idrees" target="_blank"><i class="ph ph-github-logo"></i></a>
-            <a href="#" target="_blank"><i class="ph ph-linkedin-logo"></i></a>
-            <a href="#" target="_blank"><i class="ph ph-twitter-logo"></i></a>
+        <div class="footer-inner">
+            <p>© 2026 Muhammad Idrees · Built with intention</p>
+            <p class="footer-location"><i class="ph ph-map-pin"></i> Rawalpindi, Pakistan</p>
         </div>
-        <p>Designed & Built by Idrees</p>
     </footer>
 
     <script src="script.js"></script>
