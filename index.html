@@ -3,114 +3,380 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Muhammad Idrees — Undergraduate AI/ML Researcher at FAST-NUCES Islamabad.">
-    <title>Muhammad Idrees - Research Profile</title>
+    <meta name="description" content="Muhammad Idrees — Undergraduate AI/ML Researcher at FAST-NUCES Islamabad. Research in Machine Learning, High-Performance Computing, Generative AI, and NLP. Open to PhD opportunities.">
+    <meta name="keywords" content="Muhammad Idrees, AI researcher, machine learning, FAST-NUCES, PhD applicant, HPC, CUDA, NLP, generative AI">
+    <meta name="author" content="Muhammad Idrees">
+    <title>Muhammad Idrees — AI/ML Researcher</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="header-content">
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#" class="nav-name">M. Idrees</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero / Header -->
+    <header id="hero" class="hero">
+        <div class="hero-inner">
+            <div class="hero-text">
+                <p class="hero-label">AI / ML Researcher</p>
                 <h1>Muhammad Idrees</h1>
-                <p class="subtitle">Undergraduate Researcher in AI Systems & High-Performance Computing</p>
-                <p class="affiliation">Computer Science Laboratory · FAST-NUCES Islamabad</p>
-                <div class="links">
-                    <a href="mailto:muhammad.idrees2k25@gmail.com">[Email]</a>
-                    <a href="https://github.com/code-with-idrees" target="_blank">[GitHub]</a>
-                    <a href="https://scholar.google.com" target="_blank">[Google Scholar]</a>
-                    <a href="https://linkedin.com/in/muhammadidrees-" target="_blank">[LinkedIn]</a>
+                <p class="hero-affiliation">
+                    <i class="ph ph-graduation-cap"></i>
+                    BS Computer Science · <a href="https://www.nu.edu.pk/" target="_blank">FAST-NUCES</a>, Islamabad
+                </p>
+                <p class="hero-tagline">
+                    I build AI systems that are efficient, scalable, and universally accessible. 
+                    My research spans <strong>deep learning</strong>, <strong>high-performance computing</strong>, and <strong>generative AI</strong> — from 
+                    low-level CUDA kernel optimization to multi-agent LLM pipelines.
+                </p>
+                <div class="hero-status">
+                    <span class="status-badge"><span class="status-dot"></span> Open to PhD Opportunities & Research Collaborations</span>
+                </div>
+                <div class="hero-links">
+                    <a href="https://github.com/code-with-idrees" target="_blank" class="icon-link" title="GitHub"><i class="ph ph-github-logo"></i></a>
+                    <a href="https://linkedin.com/in/muhammadidrees-" target="_blank" class="icon-link" title="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+                    <a href="https://medium.com/@idrees0" target="_blank" class="icon-link" title="Medium"><i class="ph ph-medium-logo"></i></a>
+                    <a href="https://instagram.com/thee_persistent" target="_blank" class="icon-link" title="Instagram"><i class="ph ph-instagram-logo"></i></a>
+                    <a href="mailto:muhammad.idrees2k25@gmail.com" class="icon-link" title="Email"><i class="ph ph-envelope-simple"></i></a>
                 </div>
             </div>
-            <div class="header-photo">
-                <img src="image.png" alt="Muhammad Idrees">
+            <div class="hero-photo">
+                <div class="photo-frame">
+                    <img src="image.png" alt="Muhammad Idrees" id="profilePhoto">
+                    <div class="photo-placeholder" id="photoPlaceholder">
+                        <i class="ph ph-user"></i>
+                        <span>Your Photo</span>
+                    </div>
+                </div>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <hr class="heavy-rule">
-
-        <section id="abstract">
-            <h2>Abstract</h2>
-            <p>
-                I am an undergraduate researcher at FAST-NUCES focused on the intersection of High-Performance Computing and Generative AI. 
-                My primary research objective is bridging the gap between theoretical machine learning advances and real-world deployment, 
-                with an emphasis on efficient model inference, low-resource NLP architectures, and scalable training infrastructure. 
-                I am actively seeking PhD opportunities to further explore multi-agent LLM systems and hardware-aware deep learning.
-            </p>
-        </section>
-
-        <section id="research-interests">
-            <h2>1. Research Interests</h2>
-            <ul class="interests-list">
-                <li><strong>Machine Learning & NLP:</strong> Transformers, Seq2Seq Models, Multi-Agent LLMs, Parameter-Efficient Fine-Tuning (LoRA/QLoRA).</li>
-                <li><strong>High-Performance Computing:</strong> CUDA Programming, MPI/OpenMP, Hardware-aware optimization, Quantization techniques.</li>
-                <li><strong>Generative AI Systems:</strong> Mixture-of-Experts (MoE), Diffusion Models, Large-Scale Pre-training architectures.</li>
-            </ul>
-        </section>
-
-        <section id="publications">
-            <h2>2. Selected Works & Preprints</h2>
-            
-            <div class="paper">
-                <h3>[1] Denoising Autoencoder for CIFAR-10: Ablation Studies on Architecture & Noise Robustness</h3>
-                <p class="authors">M. Idrees</p>
-                <p class="journal">Preprint, 2026. <a href="https://github.com/code-with-idrees/Denoising-Autoencoder-Cifar10" target="_blank">[Code]</a></p>
-                <p class="paper-desc">A comprehensive study of convolutional autoencoder architectures for image denoising. Evaluated across 45+ systematic ablation experiments yielding 24.62 dB PSNR and 0.82 SSIM.</p>
-            </div>
-
-            <div class="paper">
-                <h3>[2] Intelligent Reading Comprehension & Quiz Generation: Hybrid ML Pipeline</h3>
-                <p class="authors">M. Idrees</p>
-                <p class="journal">Undergraduate Project, 2026. <a href="https://github.com/code-with-idrees/NeuraQuiz-AI" target="_blank">[Code]</a></p>
-                <p class="paper-desc">An end-to-end NLP system combining BERT-based encoder networks for deep textual comprehension and T5 generators for automated distractor/hint synthesis.</p>
-            </div>
-
-            <div class="paper">
-                <h3>[3] English–Urdu Neural Machine Translation: Empirical Study on Low-Resource Seq2Seq</h3>
-                <p class="authors">M. Idrees</p>
-                <p class="journal">Undergraduate Project, 2026. <a href="https://github.com/code-with-idrees/Machine_Translation_RNN" target="_blank">[Code]</a></p>
-                <p class="paper-desc">Comparative analysis of recurrent encoder-decoder architectures evaluating cross-lingual semantic alignment in extremely low-resource language pairs.</p>
+    <main>
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="section-inner">
+                <h2 class="section-heading">About</h2>
+                <div class="about-content">
+                    <p>
+                        I am an undergraduate researcher at <strong>FAST-NUCES Islamabad</strong> working at the intersection 
+                        of deep learning, high-performance computing, and generative AI. I am a <strong>Stanford Code in Place 
+                        Section Leader '25</strong> and was selected for the <strong>CERN Beamline for Schools (BL4S)</strong> program.
+                    </p>
+                    <p>
+                        My work ranges from designing memory-efficient transformer architectures to building production-grade 
+                        multi-agent LLM pipelines. I care about making models that actually work — fast, interpretable, and deployable.
+                        I write about my research on <a href="https://medium.com/@idrees0" target="_blank">Medium</a>.
+                    </p>
+                    <p>
+                        I am actively seeking <strong>PhD positions</strong> in Machine Learning, NLP, or HPC for Fall 2026/2027. 
+                        I am also open to research internships and collaborations.
+                    </p>
+                </div>
             </div>
         </section>
 
-        <section id="engineering">
-            <h2>3. Engineering & Systems Implementations</h2>
-            
-            <div class="paper">
-                <h3>Google Meet AI Attendance Agent</h3>
-                <p class="paper-desc">Engineered a fully offline, privacy-first agent that joins meetings, transcribes audio via Faster-Whisper, and utilizes local Ollama LLMs for semantic note generation and attendance tracking.</p>
-            </div>
-
-            <div class="paper">
-                <h3>Super Mario in x86 Assembly</h3>
-                <p class="paper-desc">Faithful recreation of Super Mario Bros developed natively in x86 Assembly, demonstrating low-level systems programming and direct hardware manipulation.</p>
+        <!-- Research Interests -->
+        <section id="research" class="section section-alt">
+            <div class="section-inner">
+                <h2 class="section-heading">Research Interests</h2>
+                <div class="research-grid">
+                    <div class="research-card">
+                        <div class="research-icon"><i class="ph ph-brain"></i></div>
+                        <h3>Machine Learning & NLP</h3>
+                        <ul>
+                            <li>Transformer architectures (BERT, T5, encoder-decoder)</li>
+                            <li>Sequence-to-sequence & low-resource NMT</li>
+                            <li>Multi-agent LLM orchestration</li>
+                            <li>Efficient fine-tuning: LoRA, QLoRA, PEFT</li>
+                        </ul>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon"><i class="ph ph-cpu"></i></div>
+                        <h3>High-Performance Computing</h3>
+                        <ul>
+                            <li>CUDA programming & GPU-accelerated ML</li>
+                            <li>Parallel & distributed training (MPI, OpenMP)</li>
+                            <li>Memory-efficient inference & FlashAttention</li>
+                            <li>Model compression & quantization</li>
+                        </ul>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon"><i class="ph ph-robot"></i></div>
+                        <h3>Generative AI</h3>
+                        <ul>
+                            <li>Large language models (Gemini, Groq, Ollama)</li>
+                            <li>Diffusion models & image synthesis</li>
+                            <li>Autonomous AI agents & tool-use pipelines</li>
+                            <li>Prompt engineering & RLHF</li>
+                        </ul>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon"><i class="ph ph-flask"></i></div>
+                        <h3>Currently Exploring</h3>
+                        <ul>
+                            <li>Sparse Mixture-of-Experts architectures</li>
+                            <li>FlashAttention & memory-efficient transformers</li>
+                            <li>Autonomous multi-agent reasoning systems</li>
+                            <li>Foundation model pre-training at scale</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="experience">
-            <h2>4. Academic & Professional Experience</h2>
-            <ul class="timeline-list">
-                <li>
-                    <strong>Section Leader</strong> — Stanford University (Code in Place) <span class="date">2025</span>
-                    <p>Instructed global cohorts in Python programming and foundational CS principles through Stanford's worldwide outreach program.</p>
-                </li>
-                <li>
-                    <strong>Competition Selectee</strong> — CERN Beamline for Schools (BL4S) <span class="date">2025</span>
-                    <p>Selected to participate in international particle physics experimental design proposals for execution at CERN facilities.</p>
-                </li>
-                <li>
-                    <strong>BS Computer Science</strong> — FAST-NUCES <span class="date">2024–Present</span>
-                    <p>Concentrating in Artificial Intelligence and Systems Architecture.</p>
-                </li>
-            </ul>
+        <!-- Publications / Research Work -->
+        <section id="publications" class="section">
+            <div class="section-inner">
+                <h2 class="section-heading">Research Work & Reports</h2>
+                <div class="publications-list">
+                    <div class="pub-item">
+                        <div class="pub-year">2026</div>
+                        <div class="pub-content">
+                            <h3>Denoising Autoencoder for CIFAR-10: Ablation Studies on Architecture & Noise Robustness</h3>
+                            <p class="pub-authors"><strong>Muhammad Idrees</strong></p>
+                            <p class="pub-venue">10-page LNCS-format research report · 45+ ablation experiments</p>
+                            <p class="pub-desc">Designed a 182K-parameter DAE achieving 24.62 dB PSNR and 0.8225 SSIM. Comprehensive study on noise-level sensitivity, bottleneck dimensionality, and training dynamics with publication-quality figures.</p>
+                            <div class="pub-tags">
+                                <span>PyTorch</span><span>Computer Vision</span><span>Autoencoders</span>
+                            </div>
+                            <div class="pub-links">
+                                <a href="https://github.com/code-with-idrees/Denoising-Autoencoder-Cifar10" target="_blank"><i class="ph ph-github-logo"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pub-item">
+                        <div class="pub-year">2026</div>
+                        <div class="pub-content">
+                            <h3>Intelligent Reading Comprehension & Quiz Generation using Hybrid ML Pipelines</h3>
+                            <p class="pub-authors"><strong>Muhammad Idrees</strong>, et al.</p>
+                            <p class="pub-venue">FAST-NUCES Capstone Project · BERT + T5 Transformer Pipeline</p>
+                            <p class="pub-desc">Hybrid ML pipeline using BERT + T5 transformers to analyze text and auto-generate reading comprehension questions and quizzes. Designed as a full AI-powered educational tool with BLEU/ROUGE/METEOR evaluation.</p>
+                            <div class="pub-tags">
+                                <span>NLP</span><span>BERT</span><span>T5</span><span>Question Generation</span>
+                            </div>
+                            <div class="pub-links">
+                                <a href="https://github.com/code-with-idrees/NeuraQuiz-AI" target="_blank"><i class="ph ph-github-logo"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pub-item">
+                        <div class="pub-year">2026</div>
+                        <div class="pub-content">
+                            <h3>English–Urdu Neural Machine Translation: An Empirical Study on Low-Resource Seq2Seq</h3>
+                            <p class="pub-authors"><strong>Muhammad Idrees</strong></p>
+                            <p class="pub-venue">Empirical Study · Vanilla RNN Encoder-Decoder</p>
+                            <p class="pub-desc">Vanilla RNN encoder-decoder for low-resource Eng→Urdu NMT. Empirical study on vanishing gradients, sequence bottlenecks, and training instability in under-resourced language pairs.</p>
+                            <div class="pub-tags">
+                                <span>PyTorch</span><span>RNN</span><span>Seq2Seq</span><span>Computational Linguistics</span>
+                            </div>
+                            <div class="pub-links">
+                                <a href="https://github.com/code-with-idrees/Machine_Translation_RNN" target="_blank"><i class="ph ph-github-logo"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <footer class="footer">
-            <hr class="light-rule">
-            <p>Last updated: May 2026. Hand-coded layout inspired by arXiv preprints and traditional academic typesetting.</p>
-        </footer>
-    </div>
+        <!-- Featured Projects -->
+        <section id="projects" class="section section-alt">
+            <div class="section-inner">
+                <h2 class="section-heading">Featured Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-top">
+                            <i class="ph ph-folder-open"></i>
+                            <div class="project-card-links">
+                                <a href="https://github.com/code-with-idrees/Google-Meet-AI-Attendence-Agent" target="_blank"><i class="ph ph-github-logo"></i></a>
+                            </div>
+                        </div>
+                        <h3>Google Meet AI Attendance Agent</h3>
+                        <p>Fully offline autonomous agent that joins live Google Meet sessions, transcribes speech via Faster-Whisper, marks attendance, answers questions, and auto-generates structured PDF notes. Zero API keys required.</p>
+                        <div class="project-meta">
+                            <span>Python</span><span>Faster-Whisper</span><span>Ollama</span><span>Playwright</span>
+                        </div>
+                        <div class="project-stars"><i class="ph ph-star"></i> 11</div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-top">
+                            <i class="ph ph-folder-open"></i>
+                            <div class="project-card-links">
+                                <a href="https://github.com/code-with-idrees/Super-Mario-x86-Assembly" target="_blank"><i class="ph ph-github-logo"></i></a>
+                            </div>
+                        </div>
+                        <h3>Super Mario in x86 Assembly</h3>
+                        <p>A faithful recreation of Super Mario Bros built entirely in x86 Assembly language, demonstrating low-level systems programming, hardware interaction, and game development fundamentals.</p>
+                        <div class="project-meta">
+                            <span>x86 Assembly</span><span>Systems Programming</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-top">
+                            <i class="ph ph-folder-open"></i>
+                            <div class="project-card-links">
+                                <a href="https://github.com/code-with-idrees/Google_Cloud_x_MLB_Hackathon" target="_blank"><i class="ph ph-github-logo"></i></a>
+                            </div>
+                        </div>
+                        <h3>Google Cloud × MLB Hackathon</h3>
+                        <p>Production-grade MLB fan engagement platform using Google Cloud AI. Built real-time predictive models and personalized content pipelines for live game enhancement.</p>
+                        <div class="project-meta">
+                            <span>GCP</span><span>Python</span><span>Predictive Modeling</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-top">
+                            <i class="ph ph-folder-open"></i>
+                            <div class="project-card-links">
+                                <a href="https://github.com/code-with-idrees/VIRASAT_AI" target="_blank"><i class="ph ph-github-logo"></i></a>
+                            </div>
+                        </div>
+                        <h3>VIRASAT AI</h3>
+                        <p>AI-powered cultural heritage preservation system leveraging modern ML techniques for documenting and analyzing South Asian historical artifacts and traditions.</p>
+                        <div class="project-meta">
+                            <span>Python</span><span>AI</span><span>Cultural Tech</span>
+                        </div>
+                    </article>
+                </div>
+                <div class="projects-more">
+                    <a href="https://github.com/code-with-idrees?tab=repositories" target="_blank" class="text-link">
+                        View all repositories on GitHub <i class="ph ph-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Highlights -->
+        <section id="experience" class="section">
+            <div class="section-inner">
+                <h2 class="section-heading">Experience & Highlights</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2025</div>
+                            <h3>Stanford Code in Place — Section Leader</h3>
+                            <p>Selected as a Section Leader for Stanford University's Code in Place program, mentoring students globally in introductory Python programming and CS fundamentals.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2025</div>
+                            <h3>CERN Beamline for Schools (BL4S)</h3>
+                            <p>Selected for the prestigious CERN BL4S program — a global competition where teams propose particle physics experiments to be carried out at CERN's facilities.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2024 – Present</div>
+                            <h3>BS Computer Science — FAST-NUCES, Islamabad</h3>
+                            <p>Undergraduate studies with focus on AI/ML, HPC, and systems programming. Active in competitive programming and open-source contributions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Stack -->
+        <section id="skills" class="section section-alt">
+            <div class="section-inner">
+                <h2 class="section-heading">Technical Proficiency</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="ph ph-code"></i> Languages</h3>
+                        <div class="skill-pills">
+                            <span>Python</span><span>C++</span><span>Java</span><span>JavaScript</span><span>SQL</span><span>x86 Assembly</span><span>CUDA C</span><span>TeX</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="ph ph-brain"></i> ML / Deep Learning</h3>
+                        <div class="skill-pills">
+                            <span>PyTorch</span><span>TensorFlow</span><span>Hugging Face</span><span>scikit-learn</span><span>XGBoost</span><span>SBERT</span><span>spaCy</span><span>NLTK</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="ph ph-robot"></i> Generative AI & LLMs</h3>
+                        <div class="skill-pills">
+                            <span>Gemini API</span><span>Groq</span><span>Ollama</span><span>LangChain</span><span>LoRA</span><span>QLoRA</span><span>PEFT</span><span>RLHF</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="ph ph-cpu"></i> HPC & Systems</h3>
+                        <div class="skill-pills">
+                            <span>CUDA</span><span>MPI</span><span>OpenMP</span><span>FlashAttention</span><span>NVIDIA CUDA Quantum</span><span>Linux</span><span>Docker</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="ph ph-cloud"></i> Cloud & MLOps</h3>
+                        <div class="skill-pills">
+                            <span>Google Cloud</span><span>Git</span><span>GitHub Actions</span><span>Weights & Biases</span><span>Jupyter</span><span>Colab</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <div class="section-inner">
+                <h2 class="section-heading">Get in Touch</h2>
+                <div class="contact-content">
+                    <p>
+                        I'm actively seeking <strong>PhD positions</strong>, <strong>research internships</strong>, and 
+                        <strong>collaborations</strong> in Machine Learning, NLP, and High-Performance Computing.
+                        If you're a faculty member, researcher, or fellow student with shared interests, 
+                        I'd love to connect.
+                    </p>
+                    <a href="mailto:muhammad.idrees2k25@gmail.com" class="contact-btn">
+                        <i class="ph ph-envelope-simple"></i> muhammad.idrees2k25@gmail.com
+                    </a>
+                    <div class="contact-links">
+                        <a href="https://github.com/code-with-idrees" target="_blank"><i class="ph ph-github-logo"></i> GitHub</a>
+                        <a href="https://linkedin.com/in/muhammadidrees-" target="_blank"><i class="ph ph-linkedin-logo"></i> LinkedIn</a>
+                        <a href="https://medium.com/@idrees0" target="_blank"><i class="ph ph-medium-logo"></i> Medium</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <p>© 2026 Muhammad Idrees · Built with intention</p>
+            <p class="footer-location"><i class="ph ph-map-pin"></i> Rawalpindi, Pakistan</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
